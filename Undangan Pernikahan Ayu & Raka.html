@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Pernikahan Ayu &amp; Raka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3F6F1;--ink:#14232B;--teal:#0F4C4A;--teal2:#0A3836;--gold:#E8A93B;--mute:#4B5E62;--line:rgba(20,35,43,.16);--card:#FFFFFF;--onteal:#F3F6F1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0D1718;--ink:#E9F0EC;--mute:#9FB3B2;--line:rgba(233,240,236,.18);--card:#142324}}
+:root[data-theme="dark"]{--paper:#0D1718;--ink:#E9F0EC;--mute:#9FB3B2;--line:rgba(233,240,236,.18);--card:#142324}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Young Serif",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.1;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* Hero */
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;color:var(--onteal);padding:4rem 1.25rem 3rem;position:relative;overflow:hidden;
+background:
+radial-gradient(circle at 50% 50%,transparent 0 36%,rgba(232,169,59,.20) 37% 39%,transparent 40%) 0 0/64px 64px,
+radial-gradient(circle at 50% 50%,transparent 0 36%,rgba(232,169,59,.20) 37% 39%,transparent 40%) 32px 32px/64px 64px,
+radial-gradient(ellipse at 50% 40%,var(--teal) 0%,var(--teal2) 75%)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(10,56,54,.92) 0 38%,transparent 72%);pointer-events:none}
+.hero>div{position:relative;z-index:1;max-width:900px;width:100%}
+.lead{font-size:1.05rem;opacity:.9;margin-bottom:1.5rem}
+.names{font-size:clamp(4rem,19vw,10.5rem);letter-spacing:-.02em}
+.names span{display:block}
+.names .amp{font-size:.42em;color:var(--gold);line-height:1;margin:.05em 0}
+.date{margin-top:1.75rem;font-size:1.2rem;font-weight:500}
+.count{display:flex;justify-content:center;margin:2rem auto 0;width:max-content;max-width:100%;border-block:1px solid rgba(243,246,241,.3)}
+.count div{padding:.9rem clamp(.7rem,3.5vw,1.6rem);min-width:4.2rem}
+.count div+div{border-left:1px solid rgba(243,246,241,.3)}
+.count b{display:block;font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(1.6rem,6vw,2.4rem);line-height:1.1;font-variant-numeric:tabular-nums}
+.count small{font-size:.85rem;opacity:.8}
+.cta{display:inline-block;margin-top:2.25rem;background:var(--gold);color:#14232B;font-weight:600;text-decoration:none;padding:.9rem 1.8rem;border-radius:999px;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.in{opacity:0;transform:translateY(14px);animation:in .8s cubic-bezier(.2,.7,.2,1) forwards}
+.in:nth-child(1){animation-delay:.1s}.in:nth-child(2){animation-delay:.3s}.in:nth-child(3){animation-delay:.55s}.in:nth-child(4){animation-delay:.8s}.in:nth-child(5){animation-delay:1s}
+@keyframes in{to{opacity:1;transform:none}}
+
+/* Sections */
+section.s{padding:clamp(3.5rem,9vw,6.5rem) 1.25rem}
+.wrap{max-width:960px;margin:0 auto}
+.quote{max-width:34rem;margin:0 auto;text-align:center}
+.quote h2{font-size:clamp(1.6rem,4.5vw,2.3rem);margin-bottom:1.1rem}
+.quote p{color:var(--mute)}
+h2.t{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:2.5rem}
+.events{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card)}
+.ev{padding:clamp(1.5rem,4vw,2.5rem)}
+.ev+.ev{border-left:1px solid var(--line)}
+.ev h3{font-size:1.8rem;margin-bottom:.4rem}
+.ev .when{color:var(--teal);font-weight:600;margin-bottom:1rem}
+:root[data-theme="dark"] .ev .when{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ev .when{color:var(--gold)}}
+.ev p+p{margin-top:.5rem;color:var(--mute)}
+.place{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;margin-top:2rem}
+.place p{color:var(--mute);max-width:32rem}
+.btn{display:inline-block;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;padding:.75rem 1.5rem;border-radius:999px;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+
+/* RSVP */
+.rsvp{background:var(--teal);color:var(--onteal)}
+.rsvp .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,6vw,4.5rem);align-items:start}
+.rsvp h2{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:1rem}
+.rsvp .wrap>div>p{opacity:.9;max-width:26rem}
+form{display:grid;gap:1.1rem}
+label{display:grid;gap:.35rem;font-weight:500}
+input,select,textarea{font:inherit;color:#14232B;background:#F3F6F1;border:2px solid transparent;border-radius:12px;padding:.75rem .9rem;width:100%}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+textarea{resize:vertical;min-height:6rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+button.cta{border:0;cursor:pointer;font:inherit;font-weight:600;margin-top:.4rem;justify-self:start}
+.ok{display:none;padding:1.5rem;border:1px solid rgba(243,246,241,.4);border-radius:16px}
+.ok.show{display:block;animation:in .5s forwards}
+.ok h3{font-size:1.6rem;margin-bottom:.5rem}
+footer{padding:3rem 1.25rem;text-align:center;color:var(--mute)}
+footer b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.6rem;color:var(--ink);display:block;margin-bottom:.3rem}
+
+@media (max-width:720px){
+.events{grid-template-columns:1fr}
+.ev+.ev{border-left:0;border-top:1px solid var(--line)}
+.rsvp .wrap{grid-template-columns:1fr}
+.row{grid-template-columns:1fr}
+.count div{min-width:3.6rem}
+}
+@media (prefers-reduced-motion:reduce){.in{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}.cta,.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div>
+    <p class="lead in">Dengan penuh syukur, kami mengundang Anda ke pernikahan</p>
+    <h1 class="names in"><span>Ayu</span><span class="amp">&amp;</span><span>Raka</span></h1>
+    <p class="date in">Sabtu, 20 Februari 2027</p>
+    <div class="count in" role="timer" aria-label="Hitung mundur menuju hari pernikahan">
+      <div><b id="d">0</b><small>hari</small></div>
+      <div><b id="h">0</b><small>jam</small></div>
+      <div><b id="m">0</b><small>menit</small></div>
+      <div><b id="s">0</b><small>detik</small></div>
+    </div>
+    <a class="cta in" href="#rsvp">Konfirmasi kehadiran</a>
+  </div>
+</header>
+
+<section class="s">
+  <div class="quote">
+    <h2>Dua keluarga, satu hari yang kami nantikan</h2>
+    <p>Kehadiran dan doa restu Anda akan menjadi hadiah terindah bagi kami. Kami menunggu Anda untuk berbagi kebahagiaan di hari istimewa ini.</p>
+  </div>
+</section>
+
+<section class="s" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="t">Rangkaian acara</h2>
+    <div class="events">
+      <article class="ev">
+        <h3>Akad nikah</h3>
+        <p class="when">08.00 – 10.00 WIB</p>
+        <p>Prosesi ijab kabul bersama keluarga dan kerabat dekat.</p>
+        <p>Mohon hadir 15 menit lebih awal.</p>
+      </article>
+      <article class="ev">
+        <h3>Resepsi</h3>
+        <p class="when">11.00 – 14.00 WIB</p>
+        <p>Jamuan makan siang dan ramah tamah bersama seluruh tamu undangan.</p>
+        <p>Tamu undangan dipersilakan hadir kapan saja pada jam tersebut.</p>
+      </article>
+    </div>
+    <div class="place">
+      <p><strong>Graha Melati</strong><br>Jl. Pemuda No. 12, Jepara, Jawa Tengah</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Jepara" target="_blank" rel="noopener">Buka di Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section class="s rsvp" id="rsvp">
+  <div class="wrap">
+    <div>
+      <h2>Akan hadir?</h2>
+      <p>Beri tahu kami sebelum 10 Februari 2027 agar kami dapat menyiapkan tempat untuk Anda.</p>
+    </div>
+    <div>
+      <form id="f">
+        <label>Nama lengkap
+          <input name="nama" required autocomplete="name">
+        </label>
+        <div class="row">
+          <label>Kehadiran
+            <select name="hadir"><option>Hadir</option><option>Tidak bisa hadir</option></select>
+          </label>
+          <label>Jumlah tamu
+            <input name="jumlah" type="number" min="1" max="5" value="1">
+          </label>
+        </div>
+        <label>Ucapan dan doa
+          <textarea name="pesan"></textarea>
+        </label>
+        <button class="cta" type="submit">Kirim konfirmasi</button>
+      </form>
+      <div class="ok" id="ok" role="status" aria-live="polite">
+        <h3>Terima kasih, <span id="who"></span></h3>
+        <p id="msg"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Ayu &amp; Raka</b>
+  <p>Sampai jumpa di hari bahagia kami.</p>
+</footer>
+
+<script>
+(function(){
+  var target=new Date('2027-02-20T08:00:00+07:00').getTime();
+  var el={d:document.getElementById('d'),h:document.getElementById('h'),m:document.getElementById('m'),s:document.getElementById('s')};
+  function tick(){
+    var t=Math.max(0,target-Date.now());
+    el.d.textContent=Math.floor(t/864e5);
+    el.h.textContent=Math.floor(t%864e5/36e5);
+    el.m.textContent=Math.floor(t%36e5/6e4);
+    el.s.textContent=Math.floor(t%6e4/1e3);
+  }
+  tick();setInterval(tick,1000);
+
+  var f=document.getElementById('f'),ok=document.getElementById('ok');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f),hadir=d.get('hadir')==='Hadir';
+    document.getElementById('who').textContent=d.get('nama');
+    document.getElementById('msg').textContent=hadir
+      ?'Konfirmasi Anda untuk '+d.get('jumlah')+' orang sudah kami terima. Sampai jumpa pada 20 Februari.'
+      :'Kami mengerti dan tetap menghargai doa Anda dari jauh.';
+    f.style.display='none';
+    ok.classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
